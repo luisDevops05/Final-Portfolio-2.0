@@ -120,7 +120,7 @@
     grid-template-columns: 340px;
   }
   .contact-info {
-    text-align: left;
+    text-align: center;
   }
 }
 @media (max-width: 400) {
