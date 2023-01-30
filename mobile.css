@@ -1,0 +1,134 @@
+@media (max-width: 830px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-holder {
+    grid-template-columns: 600px;
+    gap: 20px;
+  }
+  .about-heading {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .about-content {
+    grid-template-columns: 600px;
+    gap: 40px;
+  }
+  .about-img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .hero-holder {
+    grid-template-columns: 340px;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .about-content {
+    grid-template-columns: 340px;
+    gap: 80px;
+    margin-left: 0;
+  }
+
+  .about-heading {
+    margin-left: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .about-img {
+    text-align: center;
+  }
+
+  .hero-img {
+    text-align: center;
+  }
+  #hero-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-h1 h1 {
+    font-size: 35px;
+  }
+  .content-name h1 {
+    font-size: 50px;
+    padding-bottom: 25px;
+  }
+  .hero-main {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  .work-content {
+    grid-template-columns: 340px;
+  }
+  .laFleurStudio {
+    grid-template-columns: 340px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 40px;
+  }
+  .media-profile {
+    grid-template-columns: 340px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 40px;
+  }
+
+  .giphy-buzz {
+    grid-template-columns: 340px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 40px;
+  }
+
+  .contact-content {
+    grid-template-columns: 340px;
+  }
+  .contact-info {
+    text-align: left;
+  }
+}
+@media (max-width: 400) {
+  .hero-holder {
+    grid-template-columns: 290px;
+  }
+
+  .about-content {
+    grid-template-columns: 290px;
+  }
+}
