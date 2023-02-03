@@ -1,3 +1,29 @@
+@media (max-width: 1200px) {
+  .hero-holder {
+    grid-template-columns: 900px;
+  }
+
+  .about-content {
+    grid-template-columns: 900px;
+  }
+  .work-content {
+    grid-template-columns: 900px;
+  }
+}
+
+@media (max-width: 912px) {
+  .hero-holder {
+    grid-template-columns: auto;
+  }
+
+  .about-content {
+    grid-template-columns: 750px;
+  }
+  .work-content {
+    grid-template-columns: auto;
+  }
+}
+
 @media (max-width: 830px) {
   .hamburger {
     display: block;
@@ -31,9 +57,19 @@
   .nav-menu.active {
     left: 0;
   }
+  .hero-holder {
+    grid-template-columns: auto;
+  }
+
+  .about-content {
+    grid-template-columns: 750px;
+  }
+  .work-content {
+    grid-template-columns: auto;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .hero-holder {
     grid-template-columns: 600px;
     gap: 20px;
@@ -48,6 +84,51 @@
   }
   .about-img {
     text-align: center;
+  }
+  .about-content {
+    grid-template-columns: 720px;
+  }
+}
+@media (max-width: 540px) {
+  .hero-holder {
+    grid-template-columns: 520px;
+  }
+
+  .about-content {
+    grid-template-columns: 520px;
+  }
+  .content-name h1 {
+    font-size: 50px;
+  }
+  .work-content {
+    grid-template-columns: 540px;
+  }
+  .laFleurStudio {
+    display: grid;
+    grid-template-columns: 510px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    justify-content: center;
+  }
+  .media-profile {
+    display: grid;
+    grid-template-columns: 510px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    /* justify-content: left; */
+    justify-content: center;
+  }
+  .giphy-buzz {
+    display: grid;
+    grid-template-columns: 510px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    /* justify-content: left; */
+    justify-content: center;
+  }
+
+  .contact-content {
+    grid-template-columns: 510px;
   }
 }
 
